@@ -20,7 +20,7 @@ void PrintArray (double[] print)
     string space = " ";
     for (i = 0; i < print.Length; i++)
     {
-        Console.WriteLine(print[i] + space);
+        Console.Write(print[i] + space);
     }
 }
 
@@ -54,19 +54,24 @@ double MinEl(double[] minimum)
     return min;
 }
 
+Console.WriteLine("Задайте массив вещественных чисел и найдите разницу между максимальным и минимальным элементом массива.");
+Console.WriteLine("Сколько будет элементов в вашем массиве?");
+Console.Write("Ввод: ");
 int userData = Convert.ToInt32(Console.ReadLine());
 
 double[] myArray = new double[userData];
 
 FillArray(myArray);
+Console.Write("Случайно сгенерированные элементы массива: ");
 PrintArray(myArray);
+Console.WriteLine();
 MaxEl(myArray);
 MinEl(myArray);
 
 double maxNum = MaxEl(myArray);
-Console.WriteLine("Максимальное число: " + maxNum);
+Console.WriteLine("Максимальный элемент: " + maxNum);
 double minNum = MinEl(myArray);
-Console.WriteLine("Минимальное число: " + minNum);
+Console.WriteLine("Минимальный элемент: " + minNum);
 double res = maxNum - minNum;
 
-Console.WriteLine("Разница между максимальным и минимальным значением: " + res);
+Console.WriteLine("Разница между максимальным и минимальным элементом: " + res);
