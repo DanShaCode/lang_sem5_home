@@ -46,3 +46,5 @@ for (i = 0; i < newArray.Length; i++)
 
 Console.WriteLine();
 Console.WriteLine("Количество четных чисел в массиве: " + count);
+
+// Протестировано

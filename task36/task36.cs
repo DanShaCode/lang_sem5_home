@@ -16,7 +16,7 @@ void PrintArray (int[] print)
     int length = print.Length;
     int i = 0;
     string space = " ";
-    Console.Write("Случайно сгенерированные числа: ");
+    Console.Write("Случайно сгенерированный массив: ");
     for (i = 0; i < print.Length; i++)
     {
         Console.Write(print[i] + space);
@@ -51,3 +51,5 @@ int[] myArr = new int[userInput];
 FillArray(myArr);
 PrintArray(myArr);
 arrSum(myArr);
+
+// Протестировано

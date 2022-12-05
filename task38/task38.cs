@@ -75,3 +75,5 @@ Console.WriteLine("Минимальный элемент: " + minNum);
 double res = maxNum - minNum;
 
 Console.WriteLine("Разница между максимальным и минимальным элементом: " + res);
+
+// Протестировано
